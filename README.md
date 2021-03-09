@@ -14,3 +14,4 @@ https://andywu.github.io/buckgo/
 - It does not handle the case of using cryptocurrency to purchase goods.
 - It does not handle the case of receiving cryptocurrency from others.
 - It does not handle USDC. It always ignores it.
+- It does not handle the rewards from USDC
