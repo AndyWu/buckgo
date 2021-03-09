@@ -12,6 +12,10 @@ const headingStyles = {
   marginBottom: 10,
 }
 
+const textareaStyles = {
+  width: '100%',
+}
+
 const placeHolder = 'Timestamp,Transaction Type,Asset,Quantity Transacted,USD Spot Price at Transaction,USD Subtotal,USD Total (inclusive of fees),USD Fees,Notes\n2013-12-12T02:26:51Z,Buy,BTC,1.0,980.91,980.91,990.87,9.96,Bought 1.0000 BTC for $990.87 USD\n';
 
 const IndexPage = () => {
@@ -43,13 +47,13 @@ const IndexPage = () => {
       <title>My first Gatsby app</title>
       <a href='https://github.com/AndyWu/buckgo'>Source Code &amp; Readme</a>
       <h1 style={headingStyles}>
-        The code is not tested. Use it at your own risk.
+        The code is not thoroughly tested. Use it at your own risk.
       </h1>
       <h3 style={headingStyles}>Warning: Once you import the data into TurboTax, the only way to not use the data is to uncheck them one by one. I had to delete my almost done tax return and created a new one. Simply because I didn't have time to uncheck all those test records...</h3>
       <h3>Clean your Coinbase CSV file and paste it here. The content should look like this...</h3>
-      <textarea rows="20" cols="100" placeholder={placeHolder} onChange={(evt) => { handleDataEnter(evt.target.value) }}></textarea>
+      <textarea style={textareaStyles} rows="20" placeholder={placeHolder} onChange={(evt) => { handleDataEnter(evt.target.value) }}></textarea>
       <h3>Copy this to a text editor, save it and import it into TurboTax</h3>
-      <textarea rows="20" cols="100" defaultValue={csv}></textarea>
+      <textarea style={textareaStyles} rows="20" defaultValue={csv}></textarea>
       <h3>Total sell records in 2020</h3>
       {messages.map(m => <h3 key={m}>{m}</h3>)}
       <h3>{summary}</h3>
