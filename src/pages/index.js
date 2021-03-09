@@ -41,7 +41,7 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>My first Gatsby app</title>
-      <a href='https://github.com/AndyWu/buckgo'>Source Code</a>
+      <a href='https://github.com/AndyWu/buckgo'>Source Code &amp; Readme</a>
       <h1 style={headingStyles}>
         The code is not tested. Use it at your own risk.
       </h1>
