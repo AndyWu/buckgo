@@ -41,9 +41,11 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>My first Gatsby app</title>
+      <a href='https://github.com/AndyWu/buckgo'>Source Code</a>
       <h1 style={headingStyles}>
         The code is not tested. Use it at your own risk.
       </h1>
+      <h3 style={headingStyles}>Warning: Once you import the data into TurboTax, the only way to not use the data is to uncheck them one by one. I had to delete my almost done tax return and created a new one. Simply because I didn't have time to uncheck all those test records...</h3>
       <h3>Clean your Coinbase CSV file and paste it here. The content should look like this...</h3>
       <textarea rows="20" cols="100" placeholder={placeHolder} onChange={(evt) => { handleDataEnter(evt.target.value) }}></textarea>
       <h3>Copy this to a text editor, save it and import it into TurboTax</h3>
